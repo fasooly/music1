@@ -14,7 +14,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(`in ${client.guilds.size} servers `)
     console.log(`[.] ${client.users.size}`)
-    client.user.setStatus("dnd")
+    client.user.setGame(`1play`,"http://twitch.tv/idk")
 });
 //by ! - .'
 const prefix = "1"
@@ -68,7 +68,7 @@ client.on('message', async msg => { // eslint-disable-line
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 //by ! - .'
-					.setFooter("Threaper")
+					.setFooter("AJ Server")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					// eslint-disable-next-line max-depth
